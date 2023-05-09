@@ -1,6 +1,9 @@
 import React from 'react'
 import {ReactNavbar} from "overlay-navbar"
-import logo from "../../images/My_Pic.jpg"
+import logo from "../../images/logo.png"
+import {FaUserAlt} from "react-icons/fa"
+
+
 const Header = () => {
   return (
    <ReactNavbar 
@@ -25,6 +28,10 @@ const Header = () => {
     link1Color="HSL(200,100%,75%)"
     link1Size="1.5rem"
     link1Padding="3vmax"
+    profileIcon={true}
+    ProfileIconElement={FaUserAlt}
+    profileIconColorHover="white"
+    profileIconColor="HSL(200,100%,75%)"
    />
   )
 }
